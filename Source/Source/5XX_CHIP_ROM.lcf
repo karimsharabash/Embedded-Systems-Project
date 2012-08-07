@@ -1,0 +1,71 @@
+
+/* linker command file for 5XX Chip */
+
+_flash_source	= 0x00;		// **NOTE: MUST match RAM buffer address
+                                // setting in linker preference panel
+MEMORY {
+	ram : org = 0x00010000 //Offset to give user space in SRAM
+	rom : org = 0x00010000 // desired ROM address (boot address for 555)
+}
+ 
+/* We use FORCEFILES so that the linker will not deadstrip the file reset.s. The function
+   reset would be deadstripped since it is not ever called by anything */
+
+FORCEACTIVE { gInterruptVectorTable, __reset }
+
+SECTIONS {
+
+	.reset : {} > rom
+	.init  : {} > rom
+	
+	GROUP : {
+		.text (TEXT) ALIGN(0x1000) : {}
+		.rodata (CONST) : {
+			*(.rdata)
+			*(.rodata)
+		}
+		.ctors : {}
+		.dtors : {}
+		extab : {}
+		extabindex : {}
+	} > rom 	// for ROM images, this can be 'rom' if you want to execute in ROM
+				// or 'ram' if you want to execute in RAM
+	GROUP : {
+		.data : {}
+		.sdata : {}
+		.sbss : {}
+		.sdata2 : {}
+		.sbss2 : {}
+		.bss : {}
+		.PPC.EMB.sdata0 : {} 
+		.PPC.EMB.sbss0 : {}		
+	} > ram
+
+	// The dummy section is just a placeholder.  The linker automatically
+	// generates an address for it in the ROM image, which tells us
+	// where the end of the ROM image is.
+
+	.dummy ALIGN(64): {}
+	
+	_flash_dest = _f_reset;			// true flash address starts w/.init section
+	_flash_size = _f_dummy_rom - _flash_dest;
+
+	// The .fcopy section contains a small piece of code that copies the
+	// ROM image to flash.  We don't copy the .fcopy section itself to flash
+	// because it could erase the flash if it were accidentally executed
+	// at a later time.
+	//
+	// Bind it to the address it will occupy in the RAM buffer so we can
+	// execute it directly from the RAM buffer.
+
+	.fcopy BIND(_flash_source + _flash_size) ALIGN(64) : {
+		*(.fcopy)
+	}
+
+	.fcopy_data : {} 
+
+	// The internal flash algorithms provided by Motorola are
+	// packaged in a binary file.  The linker includes the contents
+	// in the .BINARY section.
+	.BINARY : {}
+}

@@ -1,0 +1,639 @@
+Link map of __start
+  1] __start (func,global) found in Runtime.PPCEABI.H.UC.a __start.o
+   2] __init_registers (func,weak) found in Runtime.PPCEABI.H.UC.a __start.o
+    3] _stack_addr found as linker generated symbol
+    3] _SDA2_BASE_ found as linker generated symbol
+    3] _SDA_BASE_ found as linker generated symbol
+   2] __init_hardware (func,global) found in __ppc_eabi_init.o 
+   2] __init_data (func,weak) found in Runtime.PPCEABI.H.UC.a __start.o
+    3] _rom_copy_info (object,global) found in Linker Generated Symbol File 
+    3] __copy_rom_section (func,global) found in Runtime.PPCEABI.H.UC.a __start.o
+     4] memcpy (func,global) found in Runtime.PPCEABI.H.UC.a __mem.o
+     4] __flush_cache (func,global) found in __ppc_eabi_init.o 
+    3] _bss_init_info (object,global) found in Linker Generated Symbol File 
+    3] __init_bss_section (func,global) found in Runtime.PPCEABI.H.UC.a __start.o
+     4] memset (func,global) found in Runtime.PPCEABI.H.UC.a __mem.o
+      5] __fill_mem (func,global) found in Runtime.PPCEABI.H.UC.a __mem.o
+   2] __init_user (func,global) found in __ppc_eabi_init.o 
+   2] main (func,global) found in main.o 
+    3] init_QADC (func,global) found in QADC.o 
+    3] init_serial (func,global) found in serial.o 
+    3] @40 (object,local) found in main.o 
+    3] serial_putstring (func,global) found in serial.o 
+     4] serial_putchar (func,global) found in serial.o 
+    3] @41 (object,local) found in main.o 
+    3] init_GPIO (func,global) found in UltraSensor.o 
+     4] isPulsing (object,global) found in UltraSensor.o 
+    3] init_pwm (func,global) found in PWMInfo.o 
+     4] init_pwm_turntable (func,global) found in PWMInfo.o 
+      5] position (object,global) found in PWMInterrupt.o 
+     4] init_pwm_wheels (func,global) found in PWMInfo.o 
+     4] init_pwm_sensor (func,global) found in PWMInfo.o 
+     4] init_pwm_timers (func,global) found in PWMInfo.o 
+    3] init_delta (func,global) found in algorithm.o 
+     4] dist (object,global) found in algorithm.o 
+     4] delta (object,global) found in algorithm.o 
+     4] delta2 (object,global) found in algorithm.o 
+    3] twitching (object,global) found in algorithm.o 
+    3] cForward (object,global) found in main.o 
+    3] mainWhile (func,global) found in main.o 
+     4] cTurn (object,global) found in main.o 
+     4] count0$48 (object,local) found in main.o 
+     4] turnLeft (func,global) found in main.o 
+      5] TurnLen (object,global) found in PWMInterrupt.o 
+     4] count1$49 (object,local) found in main.o 
+     4] count2$50 (object,local) found in main.o 
+     4] evadeLeft (func,global) found in main.o 
+     4] evadeRight (func,global) found in main.o 
+     4] stationary (func,global) found in algorithm.o 
+      5] _savegpr_27 (notype,global) found in Runtime.PPCEABI.H.UC.a runtime.o
+       6] __save_gpr (func,local) found in Runtime.PPCEABI.H.UC.a runtime.o
+      5] turning (func,global) found in algorithm.o 
+       6] stop (func,global) found in main.o 
+      5] _restgpr_27 (notype,global) found in Runtime.PPCEABI.H.UC.a runtime.o
+       6] __restore_gpr (func,local) found in Runtime.PPCEABI.H.UC.a runtime.o
+   2] exit (func,weak) found in __ppc_eabi_init.o 
+    3] _ExitProcess (func,weak) found in __ppc_eabi_init.o 
+  1] .text (section,local) found in Interrupt.o 
+   2] bTable (notype,local) found in Interrupt.o 
+    3] FlashH (notype,global) found in Interrupt.o 
+    3] .text (section,local) found in Interrupt.o 
+     4] snk (func,global) found in interrupt.o 
+     4] sensorEnd1 (func,global) found in PWMInterrupt.o 
+      5] runOnce$57 (object,local) found in PWMInterrupt.o 
+      5] mode_cnt$55 (object,local) found in PWMInterrupt.o 
+      5] mode$54 (object,local) found in PWMInterrupt.o 
+      5] pulse1_low_time (object,global) found in PWMInterrupt.o 
+      5] pulse1_high_time (object,global) found in PWMInterrupt.o 
+      5] cnt$56 (object,local) found in PWMInterrupt.o 
+     4] sensorEnd2 (func,global) found in PWMInterrupt.o 
+      5] runOnce$114 (object,local) found in PWMInterrupt.o 
+      5] mode_cnt$112 (object,local) found in PWMInterrupt.o 
+      5] mode$111 (object,local) found in PWMInterrupt.o 
+      5] pulse2_low_time (object,global) found in PWMInterrupt.o 
+      5] pulse2_high_time (object,global) found in PWMInterrupt.o 
+      5] cnt$113 (object,local) found in PWMInterrupt.o 
+     4] sensorStart1 (func,global) found in PWMInterrupt.o 
+     4] sensorStart2 (func,global) found in PWMInterrupt.o 
+     4] twitchTimer (func,global) found in PWMInterrupt.o 
+      5] cnt$18 (object,local) found in PWMInterrupt.o 
+      5] mod$19 (object,local) found in PWMInterrupt.o 
+     4] wheelTimer (func,global) found in PWMInterrupt.o 
+    3] .text (section,local) found in PWMInfo.o 
+    3] .text.31 (notype,local) found in PWMInfo.o 
+    3] .text (section,local) found in PWMInterrupt.o 
+    3] .text.168 (notype,local) found in PWMInterrupt.o 
+    3] .text (section,local) found in QADC.o 
+    3] .text.9 (notype,local) found in QADC.o 
+    3] .text (section,local) found in serial.o 
+    3] .text.123 (notype,local) found in serial.o 
+    3] .text (section,local) found in UltraSensor.o 
+    3] .text.16 (notype,local) found in UltraSensor.o 
+    3] .text (section,local) found in algorithm.o 
+    3] .text.83 (notype,local) found in algorithm.o 
+    3] .text (section,local) found in interrupt.o 
+    3] .text.39 (notype,local) found in interrupt.o 
+    3] .text (section,local) found in main.o 
+    3] .text.147 (notype,local) found in main.o 
+    3] .init (section,local) found in Runtime.PPCEABI.H.UC.a __start.o
+    3] .init.102 (notype,local) found in Runtime.PPCEABI.H.UC.a __start.o
+    3] .text (section,local) found in Runtime.PPCEABI.H.UC.a runtime.o
+    3] .text.261 (notype,local) found in Runtime.PPCEABI.H.UC.a runtime.o
+
+
+.compress.init section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.init section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000014 003f9800 000000c0  1 .init 	__ppc_eabi_init.o 
+  00000000 000010 003f9800 000000c0  4 __init_hardware 	__ppc_eabi_init.o 
+  00000010 000004 003f9810 000000d0  4 __flush_cache 	__ppc_eabi_init.o 
+  00000014 000184 003f9814 000000d4  1 .init 	Runtime.PPCEABI.H.UC.a __start.o
+  00000014 000068 003f9814 000000d4  4 __start 	Runtime.PPCEABI.H.UC.a __start.o
+  0000007c 000054 003f987c 0000013c  4 __copy_rom_section 	Runtime.PPCEABI.H.UC.a __start.o
+  000000d0 000018 003f98d0 00000190  4 __init_bss_section 	Runtime.PPCEABI.H.UC.a __start.o
+  000000e8 00001c 003f98e8 000001a8  4 __init_registers 	Runtime.PPCEABI.H.UC.a __start.o
+  00000104 000094 003f9904 000001c4  4 __init_data 	Runtime.PPCEABI.H.UC.a __start.o
+  00000198 000000 003f9998 00000258  1 .init.102 	Runtime.PPCEABI.H.UC.a __start.o
+  00000198 000134 003f9998 00000258  1 .init 	Runtime.PPCEABI.H.UC.a __mem.o
+  00000198 000050 003f9998 00000258  4 memcpy 	Runtime.PPCEABI.H.UC.a __mem.o
+  000001e8 0000b4 003f99e8 000002a8  4 __fill_mem 	Runtime.PPCEABI.H.UC.a __mem.o
+  0000029c 000030 003f9a9c 0000035c  4 memset 	Runtime.PPCEABI.H.UC.a __mem.o
+  000002cc 000040 003f9acc 0000038c  1 .init 	Linker Generated Symbol File 
+  000002cc 000030 003f9acc 0000038c  4 _rom_copy_info 	Linker Generated Symbol File 
+  000002fc 000010 003f9afc 000003bc  4 _bss_init_info 	Linker Generated Symbol File 
+
+
+.init_vle section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.compress.text section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.text section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000030 003f9b0c 000003cc  1 .text 	__ppc_eabi_init.o 
+  00000000 00000c 003f9b0c 000003cc  4 __init_user 	__ppc_eabi_init.o 
+  UNUSED   000020 ........ ........    abort __ppc_eabi_init.o 
+  0000000c 000020 003f9b18 000003d8  4 exit 	__ppc_eabi_init.o 
+  0000002c 000004 003f9b38 000003f8  4 _ExitProcess 	__ppc_eabi_init.o 
+  00000030 00030c 003f9b3c 000003fc  1 .text 	PWMInfo.o 
+  00000030 0000dc 003f9b3c 000003fc  4 init_pwm 	PWMInfo.o 
+  0000010c 000084 003f9c18 000004d8  4 init_pwm_wheels 	PWMInfo.o 
+  00000190 000044 003f9c9c 0000055c  4 init_pwm_sensor 	PWMInfo.o 
+  000001d4 0000ec 003f9ce0 000005a0  4 init_pwm_timers 	PWMInfo.o 
+  000002c0 00007c 003f9dcc 0000068c  4 init_pwm_turntable 	PWMInfo.o 
+  0000033c 000000 003f9e48 00000708  1 .text.31 	PWMInfo.o 
+  0000033c 0009ec 003f9e48 00000708  1 .text 	PWMInterrupt.o 
+  0000033c 0000d4 003f9e48 00000708  4 wheelTimer 	PWMInterrupt.o 
+  00000410 00018c 003f9f1c 000007dc  4 twitchTimer 	PWMInterrupt.o 
+  0000059c 000030 003fa0a8 00000968  4 sensorStart1 	PWMInterrupt.o 
+  000005cc 000384 003fa0d8 00000998  4 sensorEnd1 	PWMInterrupt.o 
+  00000950 000030 003fa45c 00000d1c  4 sensorStart2 	PWMInterrupt.o 
+  00000980 0003a8 003fa48c 00000d4c  4 sensorEnd2 	PWMInterrupt.o 
+  00000d28 000000 003fa834 000010f4  1 .text.168 	PWMInterrupt.o 
+  00000d28 000130 003fa834 000010f4  1 .text 	QADC.o 
+  00000d28 000130 003fa834 000010f4  4 init_QADC 	QADC.o 
+  00000e58 000000 003fa964 00001224  1 .text.9 	QADC.o 
+  00000e58 000118 003fa964 00001224  1 .text 	serial.o 
+  00000e58 000068 003fa964 00001224  4 init_serial 	serial.o 
+  00000ec0 000068 003fa9cc 0000128c  4 serial_putchar 	serial.o 
+  00000f28 000048 003faa34 000012f4  4 serial_putstring 	serial.o 
+  UNUSED   000028 ........ ........    serial_getchar serial.o 
+  UNUSED   0000a8 ........ ........    serial_getstring serial.o 
+  UNUSED   000054 ........ ........    chartohex serial.o 
+  UNUSED   00008c ........ ........    strtohex serial.o 
+  UNUSED   0000f0 ........ ........    itoa serial.o 
+  00000f70 000000 003faa7c 0000133c  1 .text.123 	serial.o 
+  00000f70 000058 003faa7c 0000133c  1 .text 	UltraSensor.o 
+  00000f70 000058 003faa7c 0000133c  4 init_GPIO 	UltraSensor.o 
+  00000fc8 000000 003faad4 00001394  1 .text.16 	UltraSensor.o 
+  00000fc8 00023c 003faad4 00001394  1 .text 	algorithm.o 
+  00000fc8 000074 003faad4 00001394  4 init_delta 	algorithm.o 
+  0000103c 0000ac 003fab48 00001408  4 stationary 	algorithm.o 
+  UNUSED   0000d0 ........ ........    moving algorithm.o 
+  000010e8 00011c 003fabf4 000014b4  4 turning 	algorithm.o 
+  00001204 000000 003fad10 000015d0  1 .text.83 	algorithm.o 
+  00001204 000004 003fad10 000015d0  1 .text 	interrupt.o 
+  UNUSED   000004 ........ ........    InterruptHandler interrupt.o 
+  00001204 000004 003fad10 000015d0  4 snk 	interrupt.o 
+  UNUSED   000004 ........ ........    PITHandler interrupt.o 
+  00001208 000000 003fad14 000015d4  1 .text.39 	interrupt.o 
+  00001208 000450 003fad14 000015d4  1 .text 	main.o 
+  UNUSED   000008 ........ ........    system_call main.o 
+  00001208 00012c 003fad14 000015d4  4 main 	main.o 
+  00001334 0001fc 003fae40 00001700  4 mainWhile 	main.o 
+  00001530 000050 003fb03c 000018fc  4 evadeLeft 	main.o 
+  00001580 000050 003fb08c 0000194c  4 evadeRight 	main.o 
+  000015d0 000038 003fb0dc 0000199c  4 turnLeft 	main.o 
+  UNUSED   000038 ........ ........    turnRight main.o 
+  UNUSED   000050 ........ ........    forward main.o 
+  00001608 000050 003fb114 000019d4  4 stop 	main.o 
+  UNUSED   0001a8 ........ ........    bug_move main.o 
+  00001658 000000 003fb164 00001a24  1 .text.147 	main.o 
+  00001658 000060 003fb164 00001a24  1 .text 	Interrupt.o 
+  00001658 000000 003fb164 00001a24    FlashH (entry of .text) 	Interrupt.o 
+  00001678 000000 003fb184 00001a44    bTable (entry of .text) 	Interrupt.o 
+  000016b8 000098 003fb1c4 00001a84  1 .text 	Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00005c ........ ........    __cvt_fp2unsigned Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00004c ........ ........    __save_fpr Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_27 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savefpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00004c ........ ........    __restore_fpr Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_27 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restfpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  000016b8 00004c 003fb1c4 00001a84  4 __save_gpr 	Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  000016ec 000000 003fb1f8 00001ab8    _savegpr_27 (entry of __save_gpr) 	Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_27 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _savegpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _save32gpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  00001704 00004c 003fb210 00001ad0  4 __restore_gpr 	Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  00001738 000000 003fb244 00001b04    _restgpr_27 (entry of __restore_gpr) 	Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_27 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _restgpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    _rest32gpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __restore_frame_and_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    __finish_restore_frame_and_exit2 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __restore_gpr_31_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    __finish_restore_frame_and_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_30_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_29_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_28_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_27_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_26_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __restore_gpr_25_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_24_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_23_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_22_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_21_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_20_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_19_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_18_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_17_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_16_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_15_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00000c ........ ........    __restore_gpr_14_exit Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000000 ........ ........    __save_lr Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_31 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_30 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_29 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_28 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_27 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_26 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_25 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_24 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_23 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_22 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_21 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_20 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_19 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_18 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_17 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_16 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_15 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000010 ........ ........    __create_frame_and_save_gpr_14 Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000ec ........ ........    __div2u Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000138 ........ ........    __div2i Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000e0 ........ ........    __mod2u Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00010c ........ ........    __mod2i Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000024 ........ ........    __shl2i Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000024 ........ ........    __shr2u Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   000028 ........ ........    __shr2i Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000b0 ........ ........    __cvt_sll_dbl Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00009c ........ ........    __cvt_ull_dbl Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000a0 ........ ........    __cvt_sll_flt Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   00008c ........ ........    __cvt_ull_flt Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000cc ........ ........    __cvt_dbl_usll Runtime.PPCEABI.H.UC.a runtime.o
+  UNUSED   0000a8 ........ ........    __cvt_dbl_ull Runtime.PPCEABI.H.UC.a runtime.o
+  00001750 000000 003fb25c 00001b1c  1 .text.261 	Runtime.PPCEABI.H.UC.a runtime.o
+
+
+.text_vle section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.compress.fini section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.fini section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.rodata section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.ctors section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.dtors section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+extab section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+extabindex section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.BINARY section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.data section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 000001 003fb260 00001b20  1 .data 	PWMInterrupt.o 
+  00000000 000001 003fb260 00001b20  1 mod$19 	PWMInterrupt.o 
+  00000001 000007 003fb268 00001b28  8 *fill*
+  00000008 000001 003fb268 00001b28  1 .data 	algorithm.o 
+  00000008 000001 003fb268 00001b28  1 twitching 	algorithm.o 
+  00000009 000007 003fb270 00001b30  8 *fill*
+  00000010 00001b 003fb270 00001b30  1 .data 	main.o 
+  00000010 000010 003fb270 00001b30  8 @40 	main.o 
+  00000020 00000b 003fb280 00001b40  4 @41 	main.o 
+
+
+.sdata section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.sbss section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.sdata2 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.sbss2 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.PPC.EMB.sdata0 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.PPC.EMB.sbss0 section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+
+
+.bss section layout
+  Starting        Virtual  File
+  address  Size   address  offset
+  ---------------------------------
+  00000000 00004c 003fb290 00001b50  1 .bss 	PWMInterrupt.o 
+  UNUSED   000004 ........ ........    direction PWMInterrupt.o 
+  00000000 000001 003fb290 00001b50  1 position 	PWMInterrupt.o 
+  UNUSED   000004 ........ ........    contAfterTurn PWMInterrupt.o 
+  00000001 000001 003fb291 00001b51  1 cnt$18 	PWMInterrupt.o 
+  00000008 000010 003fb298 00001b58  8 mode$54 	PWMInterrupt.o 
+  00000018 000004 003fb2a8 00001b68  4 mode_cnt$55 	PWMInterrupt.o 
+  0000001c 000001 003fb2ac 00001b6c  1 cnt$56 	PWMInterrupt.o 
+  0000001d 000001 003fb2ad 00001b6d  1 runOnce$57 	PWMInterrupt.o 
+  00000020 000010 003fb2b0 00001b70  8 mode$111 	PWMInterrupt.o 
+  00000030 000004 003fb2c0 00001b80  4 mode_cnt$112 	PWMInterrupt.o 
+  00000034 000001 003fb2c4 00001b84  1 cnt$113 	PWMInterrupt.o 
+  00000035 000001 003fb2c5 00001b85  1 runOnce$114 	PWMInterrupt.o 
+  UNUSED   000020 ........ ........    data_points_old PWMInterrupt.o 
+  UNUSED   000020 ........ ........    data_points_new PWMInterrupt.o 
+  00000038 000004 003fb2c8 00001b88  4 pulse2_low_time 	PWMInterrupt.o 
+  0000003c 000004 003fb2cc 00001b8c  4 pulse2_high_time 	PWMInterrupt.o 
+  00000040 000004 003fb2d0 00001b90  4 pulse1_low_time 	PWMInterrupt.o 
+  00000044 000004 003fb2d4 00001b94  4 pulse1_high_time 	PWMInterrupt.o 
+  00000048 000004 003fb2d8 00001b98  4 TurnLen 	PWMInterrupt.o 
+  0000004c 000004 003fb2e0 00001ba0  8 *fill*
+  00000050 000001 003fb2e0 00001ba0  1 .bss 	UltraSensor.o 
+  00000050 000001 003fb2e0 00001ba0  1 isPulsing 	UltraSensor.o 
+  00000051 000007 003fb2e8 00001ba8  8 *fill*
+  00000058 000060 003fb2e8 00001ba8  1 .bss 	algorithm.o 
+  00000058 000020 003fb2e8 00001ba8  8 delta2 	algorithm.o 
+  00000078 000020 003fb308 00001bc8  8 delta 	algorithm.o 
+  00000098 000020 003fb328 00001be8  8 dist 	algorithm.o 
+  000000b8 000005 003fb348 00001c08  1 .bss 	main.o 
+  000000b8 000001 003fb348 00001c08  1 cForward 	main.o 
+  000000b9 000001 003fb349 00001c09  1 cTurn 	main.o 
+  000000ba 000001 003fb34a 00001c0a  1 count0$48 	main.o 
+  000000bb 000001 003fb34b 00001c0b  1 count1$49 	main.o 
+  000000bc 000001 003fb34c 00001c0c  1 count2$50 	main.o 
+  UNUSED   000014 ........ ........    needNumber main.o 
+  UNUSED   000005 ........ ........    needPrint main.o 
+  UNUSED   000014 ........ ........    printBuffer main.o 
+
+
+Memory map:
+                   Starting Size     File
+                   address           Offset
+   .compress.init  003f9800 00000000 000000c0
+            .init  003f9800 0000030c 000000c0
+        .init_vle  003f9b0c 00000000 000003cc
+   .compress.text  003f9b0c 00000000 000003cc
+            .text  003f9b0c 00001750 000003cc
+        .text_vle  003fb25c 00000000 00001b1c
+   .compress.fini  003fb25c 00000000 00001b1c
+            .fini  003fb25c 00000000 00001b1c
+          .rodata  003fb25c 00000000 00001b20
+           .ctors  003fb25c 00000000 00001b1c
+           .dtors  003fb25c 00000000 00001b1c
+            extab  003fb25c 00000000 00001b1c
+       extabindex  003fb25c 00000000 00001b1c
+          .BINARY  003fb25c 00000000 00001b1c
+            .data  003fb260 0000002c 00001b20
+             .got  003fb28c 00000000 00001b4c
+           .sdata  003fb28c 00000000 00001b50
+            .sbss  003fb28c 00000000 00001b50
+          .sdata2  003fb28c 00000000 00001b4c
+           .sbss2  003fb28c 00000000 00001b4c
+  .PPC.EMB.sdata0  ffff8000 00000000 00001b4c
+   .PPC.EMB.sbss0  ffff8000 00000000 00001b4c
+             .bss  003fb290 000000c0 00001b50
+  .PPC.EMB.apuinfo  00006554 00000000 000080b0
+    .debug_abbrev           00000125 00001b50
+      .debug_info           00001706 00001c75
+      .debug_line           0000214b 0000337b
+       .debug_loc           000008e8 000054c6
+  .debug_pubnames           000003e5 00005dae
+
+
+Linker generated symbols:
+         _f_compress_init 003f9800
+     _f_compress_init_rom 003f9800
+         _e_compress_init 003f9800
+                  _f_init 003f9800
+              _f_init_rom 003f9800
+                  _e_init 003f9b0c
+              _f_init_vle 003f9b0c
+          _f_init_vle_rom 003f9b0c
+              _e_init_vle 003f9b0c
+         _f_compress_text 003f9b0c
+     _f_compress_text_rom 003f9b0c
+         _e_compress_text 003f9b0c
+                  _f_text 003f9b0c
+              _f_text_rom 003f9b0c
+                  _e_text 003fb25c
+              _f_text_vle 003fb25c
+          _f_text_vle_rom 003fb25c
+              _e_text_vle 003fb25c
+         _f_compress_fini 003fb25c
+     _f_compress_fini_rom 003fb25c
+         _e_compress_fini 003fb25c
+                  _f_fini 003fb25c
+              _f_fini_rom 003fb25c
+                  _e_fini 003fb25c
+                _f_rodata 003fb25c
+            _f_rodata_rom 003fb260
+                _e_rodata 003fb25c
+                 _f_ctors 003fb25c
+             _f_ctors_rom 003fb25c
+                 _e_ctors 003fb25c
+                 _f_dtors 003fb25c
+             _f_dtors_rom 003fb25c
+                 _e_dtors 003fb25c
+                  _fextab 003fb25c
+              _fextab_rom 003fb25c
+                  _eextab 003fb25c
+             _fextabindex 003fb25c
+         _fextabindex_rom 003fb25c
+             _eextabindex 003fb25c
+                _f_BINARY 003fb25c
+            _f_BINARY_rom 003fb25c
+                _e_BINARY 003fb25c
+                  _f_data 003fb260
+              _f_data_rom 003fb260
+                  _e_data 003fb28c
+                   _f_got 003fb28c
+               _f_got_rom 003fb28c
+                   _e_got 003fb28c
+                 _f_sdata 003fb28c
+             _f_sdata_rom 003fb290
+                 _e_sdata 003fb28c
+                  _f_sbss 003fb28c
+                  _e_sbss 003fb28c
+                _f_sdata2 003fb28c
+            _f_sdata2_rom 003fb28c
+                _e_sdata2 003fb28c
+                 _f_sbss2 003fb28c
+                 _e_sbss2 003fb28c
+        _f_PPC_EMB_sdata0 ffff8000
+    _f_PPC_EMB_sdata0_rom ffff8000
+        _e_PPC_EMB_sdata0 ffff8000
+         _f_PPC_EMB_sbss0 ffff8000
+         _e_PPC_EMB_sbss0 ffff8000
+                   _f_bss 003fb290
+                   _e_bss 003fb350
+              _stack_addr 003ffff0
+               _stack_end 003ffbf0
+               _heap_addr 003ffbf0
+                _heap_end 003ffbf0
+             _nbfunctions 00000029
+           SIZEOF_HEADERS 000000c0
+               _SDA_BASE_ 0040328c
+              _SDA2_BASE_ 0040328c
+           _ABS_SDA_BASE_ 0040328c
+          _ABS_SDA2_BASE_ 0040328c
