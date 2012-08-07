@@ -47,6 +47,7 @@ High-Level Design
 The robot detects movement via a pair of ultrasonic sensors and detects imminent collisions via infrared sensors. Our ultrasonic sensors are mounted on a plate that scans, looking for movement. When movement is detected, our device moves in the opposite direction of that movement. During all of this, our device outputs different songs from its built-in speaker depending on what action it is currently taking.
 
 Hardware Design
+===============
 
 Since we used the MPC555 to control our device, and the 555 does not have an FPGA, our hardware design consisted of just constructing the robot itself. TiM’s chasse was built from foam board and lots of hot glue. Aside from the processor, servos, sensors, and speaker, we also attached a couple bread boards in an attempt to neaten the mass of wires required to make TiM tick. On one of the bread boards, we attached an inverter chip, which we used to trigger interrupts on the falling edge of a pulse rather than the rising edge. The other board held a 5V power regulator, so the 7.2V batteries we were using wouldn’t fry our servos, as well as a capacitor circuit to cut down on noise from the servos.
 
@@ -55,7 +56,9 @@ We mounted the infrared sensors on the front of our robot, angled inwards so the
 The ultrasound sensors were mounted on a plate attached to a servo. For as long as these sensors receive a ‘1’ as their control signal, they will range, or send out ultrasound signals one after the other continuously. Their output is a pulse of varying length, which has a rising edge indicating when the ultrasonic signal was send out and a falling edge indicating when it returned. The longer the output pulse, the farther away the object is.
 
 We used two different types of servos: continuous motion servos for the wheels and a normal servo for the ultrasound sensor plate. The servos worked by giving them an input pulse with a specific width that corresponded to how far you wanted the servo to spin. Normal servos spin to the spot the pulse width specifies and then stop and wait for another pulse. However, due to tampering with their potentiometers, the continuous motion servos just keep spinning in the direction of the place you told the servo to spin to.
+
 Software Design
+===============
 
 Here is where we spent the majority of our time on this project. Our software was written mostly in C, though our branch table and interrupt handling routines were written in assembly.
 
@@ -64,6 +67,7 @@ We coded our project to work like a finite state machine, controlled by a global
 The software we use to play music with the speaker is fairly straightforward. We use PWM to create square waves of various frequencies, and use global arrays to switch between different frequencies to create music. Each time we switch states within our overarching finite state machine, we switch music.
 
 Results
+=======
 
 We had a lot of problems getting the ultrasound sensors to work correctly, because they were very sensitive. The slightest amount of ultrasonic noise caused drastically incorrect readings from the sensors. This was taken care of when we implemented various noise-reducing algorithms in our software, and when we ensured the power to the sensors was both securely connected and running through a capacitor circuit to cut down noise.
 
